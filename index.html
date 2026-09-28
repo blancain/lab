@@ -1,0 +1,44 @@
+<!doctype html>
+<!-- SPDX-License-Identifier: MIT -- Copyright (c) 2026 Blancain -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blancain Lab</title>
+<style>
+:root {
+  --bg: #f6f5f2; --panel: #ffffff; --text: #1d1d1f; --muted: #66666b; --line: #dcdad4;
+  --accent: #2f5fb3;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #141416; --panel: #1e1e21; --text: #ececef; --muted: #9b9ba3; --line: #34343a;
+          --accent: #7aa2f7; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+       font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 640px; margin: 0 auto; padding: 32px 16px 48px; }
+h1 { font-size: 1.5rem; margin: 0 0 4px; }
+p.lead { color: var(--muted); margin: 0 0 24px; }
+a.card { display: block; background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+         padding: 16px; margin-bottom: 12px; color: inherit; text-decoration: none; }
+a.card:hover { border-color: var(--accent); }
+a.card strong { color: var(--accent); }
+a.card span { display: block; color: var(--muted); font-size: .95rem; }
+footer { color: var(--muted); font-size: .85rem; margin-top: 28px; }
+footer a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Blancain Lab</h1>
+  <p class="lead">Tools and patches. Everything runs in your browser, from your own files.</p>
+  <a class="card" href="triad/">
+    <strong>Triad</strong>
+    <span>Mega Man X, X2 and X3 in one 12 MB Cx4 cartridge image, with a debug menu in every game.</span>
+  </a>
+  <footer>MIT licensed. Not affiliated with any game publisher; no game data is included.
+    Source: <a href="https://github.com/blancain/lab">github.com/blancain/lab</a></footer>
+</main>
+</body>
+</html>
